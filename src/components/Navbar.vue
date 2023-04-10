@@ -8,13 +8,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <RouterLink to="/" class="nav-link">Home</RouterLink>
+                    <RouterLink to="/" :class="['nav-link', $route.path === '/' ? 'active' : '']">Home</RouterLink>
                 </li>
                 <li class="nav-item">
-                    <RouterLink to="/about" class="nav-link">About</RouterLink>
+                    <RouterLink to="/about" :class="['nav-link', $route.path === '/about' ? 'active' : '']">About</RouterLink>
                 </li>
                 <li class="nav-item">
-                    <RouterLink to="/beatlesalbums" class="nav-link">Beatles Albums</RouterLink>
+                    <RouterLink to="/beatlesalbums" :class="['nav-link', $route.path === '/beatlesalbums' ? 'active' : '']">Beatles Albums</RouterLink>
                 </li>
             </ul>
             </div>
